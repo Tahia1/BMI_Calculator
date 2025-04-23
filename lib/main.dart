@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-
-import 'bmi_calculator_page.dart';
+import 'login_page.dart'; // ✅ Make sure this matches your file name
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget { // this is the main.dart code for BMI Calculator
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: "BMI Calculator",
-      home: BMICalculatorPage(),
+      debugShowCheckedModeBanner: false,
+      title: 'BMI Calculator',
+      home: LoginPage(), // ✅ Starting from LoginPage
     );
   }
 }
